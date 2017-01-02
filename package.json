@@ -1,0 +1,21 @@
+{
+  "name": "example-ts-browserify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all": "node browserify.js > bundle.js"
+  },
+  "browserify-shim": {
+    "excalibur": "global:ex"
+  },
+  "author": "Excalibur.js Team",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browserify": "^13.1.1",
+    "browserify-shim": "^3.8.12",
+    "excalibur": "^0.8.0",
+    "tsify": "^3.0.0",
+    "typescript": "^2.1.4"
+  }
+}
