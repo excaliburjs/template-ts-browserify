@@ -1,9 +1,12 @@
 # Excalibur Browserify Example
 
+![Browserify Example](image.png)
+
 To run:
 
     npm install
-    npm run all
+    npm run build
+    npm run serve
 
 This uses [`browserify`](https://github.com/substack/node-browserify) and 
 [`browserify-shim`](https://github.com/thlorenz/browserify-shim) to map Excalibur to a global object, since browserify works via
