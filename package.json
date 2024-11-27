@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "serve": "serve",
-    "build": "node browserify.js > bundle.js"
+    "build": "node browserify.js > bundle.js",
+    "test": "npm run build && npx playwright test",
+    "test:integration-update": "npx playwright test --update-snapshots"
   },
   "browserify-shim": {
     "excalibur": "global:ex"
@@ -13,13 +15,15 @@
   "author": "Excalibur.js Team",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "excalibur": "0.28.7"
+    "excalibur": "0.30.0-alpha.1267"
   },
   "devDependencies": {
-    "browserify": "17.0.0",
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "browserify": "17.0.1",
     "browserify-shim": "3.8.16",
     "tsify": "5.0.4",
-    "serve": "14.2.1",
-    "typescript": "5.3.3"
+    "serve": "14.2.4",
+    "typescript": "5.7.2"
   }
 }
